@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-image: url('bg.png');
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.heading {
+    color: white;
+    text-align: center;
+    font-size: 80px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.card {
+
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.cardbody {
+    text-align: center;
+    margin: 25px;
+}
+
+.cardbody h1 {
+    font-size: 100px;
+    margin: 10px;
+    color:white;
+    
+}
+
+.btn_style {
+    padding: 7px;
+    font-style: italic;
+    font-size: 26px;
+    background: linear-gradient(rgb(224, 237, 125), rgb(108, 108, 234));
+    border: 1px solid rgb(101, 101, 239);
+    border-radius: 8px;
+    margin: 5px;
+}
+.btn_style:hover{
+    font-size: 30px;
+    background: linear-gradient(rgb(224, 224, 110),rgb(228, 162, 39));
+    border-radius:12px ;
+    transition: 0.5s ease-in;
+    border: 3px solid rgb(143, 143, 219);
+}
+
+#btn1 {
+    color: green;
+}
+
+#btn2 {
+    color: blue;
+}
+
+#btn3 {
+    color: red;
+}
+
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cardbody h1 {
+        font-size: 60px;
+    }
+
+    .btn_style {
+        font-size: 20px;
+    }
+    .heading{
+        font-size: 60px;
+    }
+
+
+}
